@@ -120,5 +120,10 @@ namespace CargoFleetTrackingSystem.UserControls
             tb_AfterTrip.ResetText();
             tbPrice.ResetText();
         }
+
+        private void UpdateFuelConsumption_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

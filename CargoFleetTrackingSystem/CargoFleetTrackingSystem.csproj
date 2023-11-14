@@ -123,6 +123,12 @@
     <Compile Include="UserControls\RegisterUser.Designer.cs">
       <DependentUpon>RegisterUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UpdateEmployeeRates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateEmployeeRates.Designer.cs">
+      <DependentUpon>UpdateEmployeeRates.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UpdateEmployees.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\RegisterUser.resx">
       <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateEmployeeRates.resx">
+      <DependentUpon>UpdateEmployeeRates.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UpdateEmployees.resx">
       <DependentUpon>UpdateEmployees.cs</DependentUpon>

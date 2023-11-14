@@ -29,19 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cargo_FleetDBDataSet4 = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet4();
-            this.fuelConsumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fuel_ConsumptionTableAdapter = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet4TableAdapters.Fuel_ConsumptionTableAdapter();
             this.fuelIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberPlateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lBTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pPLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fuelConsumptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cargo_FleetDBDataSet4 = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet4();
+            this.fuel_ConsumptionTableAdapter = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet4TableAdapters.Fuel_ConsumptionTableAdapter();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,24 +52,13 @@
             this.tb_AfterTrip = new System.Windows.Forms.TextBox();
             this.tbPrice = new System.Windows.Forms.TextBox();
             this.tb_NP = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fuelConsumptionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
-            this.pictureBox2.Location = new System.Drawing.Point(811, 14);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(264, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -131,20 +119,6 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // cargo_FleetDBDataSet4
-            // 
-            this.cargo_FleetDBDataSet4.DataSetName = "Cargo_FleetDBDataSet4";
-            this.cargo_FleetDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fuelConsumptionBindingSource
-            // 
-            this.fuelConsumptionBindingSource.DataMember = "Fuel_Consumption";
-            this.fuelConsumptionBindingSource.DataSource = this.cargo_FleetDBDataSet4;
-            // 
-            // fuel_ConsumptionTableAdapter
-            // 
-            this.fuel_ConsumptionTableAdapter.ClearBeforeFill = true;
-            // 
             // fuelIDDataGridViewTextBoxColumn
             // 
             this.fuelIDDataGridViewTextBoxColumn.DataPropertyName = "FuelID";
@@ -185,6 +159,20 @@
             this.pPLDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.pPLDataGridViewTextBoxColumn.Name = "pPLDataGridViewTextBoxColumn";
             this.pPLDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fuelConsumptionBindingSource
+            // 
+            this.fuelConsumptionBindingSource.DataMember = "Fuel_Consumption";
+            this.fuelConsumptionBindingSource.DataSource = this.cargo_FleetDBDataSet4;
+            // 
+            // cargo_FleetDBDataSet4
+            // 
+            this.cargo_FleetDBDataSet4.DataSetName = "Cargo_FleetDBDataSet4";
+            this.cargo_FleetDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fuel_ConsumptionTableAdapter
+            // 
+            this.fuel_ConsumptionTableAdapter.ClearBeforeFill = true;
             // 
             // label8
             // 
@@ -302,6 +290,18 @@
             this.tb_NP.Size = new System.Drawing.Size(335, 27);
             this.tb_NP.TabIndex = 125;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
+            this.pictureBox2.Location = new System.Drawing.Point(811, 14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(264, 154);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // UpdateFuelConsumption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -325,11 +325,12 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateFuelConsumption";
             this.Size = new System.Drawing.Size(1933, 1451);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.UpdateFuelConsumption_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fuelConsumptionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
