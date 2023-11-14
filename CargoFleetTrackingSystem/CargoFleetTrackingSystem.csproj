@@ -147,6 +147,12 @@
     <Compile Include="UserControls\UpdateService.Designer.cs">
       <DependentUpon>UpdateService.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UpdateTrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateTrip.Designer.cs">
+      <DependentUpon>UpdateTrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UpdateVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UpdateService.resx">
       <DependentUpon>UpdateService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateTrip.resx">
+      <DependentUpon>UpdateTrip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UpdateVehicle.resx">
       <DependentUpon>UpdateVehicle.cs</DependentUpon>
