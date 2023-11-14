@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C800F6F7-F9AE-4E29-9399-4A1A6F5CBA64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CargoFleetTrackingSystem</RootNamespace>
+    <AssemblyName>CargoFleetTrackingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cargo_FleetDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_FleetDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cargo_FleetDBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DatabaseConnection.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\OfficeManager_ViewTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OfficeManager_ViewTrips.Designer.cs">
+      <DependentUpon>OfficeManager_ViewTrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RegisterUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UpdateEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateEmployees.Designer.cs">
+      <DependentUpon>UpdateEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UpdateService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateService.Designer.cs">
+      <DependentUpon>UpdateService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UpdateVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateVehicle.Designer.cs">
+      <DependentUpon>UpdateVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewPendingTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewPendingTrips.Designer.cs">
+      <DependentUpon>ViewPendingTrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardInterfaces\Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDashboardInterfaces\Driver.Designer.cs">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardInterfaces\OfficeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDashboardInterfaces\OfficeManager.Designer.cs">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OfficeManager_ViewTrips.resx">
+      <DependentUpon>OfficeManager_ViewTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RegisterUser.resx">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateEmployees.resx">
+      <DependentUpon>UpdateEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateService.resx">
+      <DependentUpon>UpdateService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateVehicle.resx">
+      <DependentUpon>UpdateVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ViewPendingTrips.resx">
+      <DependentUpon>ViewPendingTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDashboardInterfaces\OfficeManager.resx">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Cargo_FleetDBDataSet.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet.xss">
+      <DependentUpon>Cargo_FleetDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet1.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet1.xss">
+      <DependentUpon>Cargo_FleetDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet2.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet2.xss">
+      <DependentUpon>Cargo_FleetDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet3.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet3.xss">
+      <DependentUpon>Cargo_FleetDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet4.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet4.xss">
+      <DependentUpon>Cargo_FleetDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet5.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet5.xss">
+      <DependentUpon>Cargo_FleetDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet6.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet6.xss">
+      <DependentUpon>Cargo_FleetDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet7.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet7.xss">
+      <DependentUpon>Cargo_FleetDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet8.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet8.xss">
+      <DependentUpon>Cargo_FleetDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet9.xsc">
+      <DependentUpon>Cargo_FleetDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Cargo_FleetDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cargo_FleetDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cargo_FleetDBDataSet9.xss">
+      <DependentUpon>Cargo_FleetDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\cargo fleet logo 1.png" />
+    <Content Include="Images\cargo fleet logo round.png" />
+    <Content Include="Images\teslatrucks.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

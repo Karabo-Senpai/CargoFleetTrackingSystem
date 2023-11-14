@@ -1,0 +1,14 @@
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\bin\Debug\CargoFleetTrackingSystem.exe.config
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\bin\Debug\CargoFleetTrackingSystem.exe
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\bin\Debug\CargoFleetTrackingSystem.pdb
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.csproj.AssemblyReference.cache
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.Login.resources
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.Properties.Resources.resources
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.Register.resources
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.csproj.GenerateResource.cache
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.exe
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.pdb
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.UserControls.RegisterUser.resources
+C:\Users\Karabo Mere\source\repos\CargoFleetTrackingSystem\CargoFleetTrackingSystem\obj\Debug\CargoFleetTrackingSystem.UserDashboardInterfaces.OfficeManager.resources
