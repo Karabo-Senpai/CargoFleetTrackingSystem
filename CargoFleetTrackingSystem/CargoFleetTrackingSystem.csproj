@@ -129,6 +129,12 @@
     <Compile Include="UserControls\UpdateEmployees.Designer.cs">
       <DependentUpon>UpdateEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UpdateFuelConsumption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UpdateFuelConsumption.Designer.cs">
+      <DependentUpon>UpdateFuelConsumption.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UpdateService.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UpdateEmployees.resx">
       <DependentUpon>UpdateEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UpdateFuelConsumption.resx">
+      <DependentUpon>UpdateFuelConsumption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UpdateService.resx">
       <DependentUpon>UpdateService.cs</DependentUpon>

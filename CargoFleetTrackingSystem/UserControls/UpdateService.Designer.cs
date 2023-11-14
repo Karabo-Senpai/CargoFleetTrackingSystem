@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -63,24 +62,13 @@
             this.tb_Status = new System.Windows.Forms.TextBox();
             this.tb_VMak = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
-            this.pictureBox2.Location = new System.Drawing.Point(723, 24);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 10, 4, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(241, 136);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -103,6 +91,7 @@
             this.label10.Size = new System.Drawing.Size(559, 36);
             this.label10.TabIndex = 98;
             this.label10.Text = "UPDATE VEHICLE SERVICE INFORMATION";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // dataGridView1
             // 
@@ -220,13 +209,14 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 10F);
+            this.label7.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(265, 278);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(216, 20);
             this.label7.TabIndex = 100;
             this.label7.Text = "Select Row To Be Edited";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // serviceTableAdapter
             // 
@@ -277,7 +267,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(220, 990);
+            this.label4.Location = new System.Drawing.Point(247, 990);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 20);
@@ -287,12 +277,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(265, 935);
+            this.label3.Location = new System.Drawing.Point(247, 935);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 20);
+            this.label3.Size = new System.Drawing.Size(135, 20);
             this.label3.TabIndex = 114;
-            this.label3.Text = "Number Plate:";
+            this.label3.Text = "Number Plate :";
             // 
             // label2
             // 
@@ -307,16 +297,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(265, 824);
+            this.label1.Location = new System.Drawing.Point(247, 827);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 112;
-            this.label1.Text = "Vehicle Make:";
+            this.label1.Text = "Vehicle Make :";
             // 
             // Btn_Remove
             // 
-            this.Btn_Remove.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Remove.BackColor = System.Drawing.Color.DarkRed;
             this.Btn_Remove.FlatAppearance.BorderSize = 0;
             this.Btn_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Remove.Font = new System.Drawing.Font("Consolas", 10F);
@@ -401,6 +391,18 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(260, 27);
             this.dateTimePicker1.TabIndex = 119;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
+            this.pictureBox2.Location = new System.Drawing.Point(723, 24);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 10, 4, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(241, 136);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // UpdateService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -430,11 +432,12 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UpdateService";
             this.Size = new System.Drawing.Size(1718, 1161);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.UpdateService_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

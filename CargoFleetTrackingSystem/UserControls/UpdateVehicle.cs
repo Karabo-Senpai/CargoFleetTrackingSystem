@@ -49,6 +49,9 @@ namespace CargoFleetTrackingSystem.UserControls
 
             dataAdapter.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
+
+            //Closing SQL Connection
+            conn.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

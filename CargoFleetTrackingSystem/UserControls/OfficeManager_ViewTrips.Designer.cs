@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelOfficeManagerViewTrips = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Complete = new System.Windows.Forms.Button();
             this.btn_PendingTrips = new System.Windows.Forms.Button();
             this.btn_ActiveTrips = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelOfficeManagerViewTrips.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,6 +55,51 @@
             this.panelOfficeManagerViewTrips.Size = new System.Drawing.Size(1565, 949);
             this.panelOfficeManagerViewTrips.TabIndex = 0;
             this.panelOfficeManagerViewTrips.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOfficeManagerViewTrips_Paint);
+            // 
+            // btn_Complete
+            // 
+            this.btn_Complete.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Complete.FlatAppearance.BorderSize = 0;
+            this.btn_Complete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Complete.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Complete.Location = new System.Drawing.Point(23, 842);
+            this.btn_Complete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Complete.Name = "btn_Complete";
+            this.btn_Complete.Size = new System.Drawing.Size(265, 36);
+            this.btn_Complete.TabIndex = 45;
+            this.btn_Complete.Text = "Complete Trip";
+            this.btn_Complete.UseVisualStyleBackColor = false;
+            this.btn_Complete.Click += new System.EventHandler(this.btn_Complete_Click);
+            // 
+            // btn_PendingTrips
+            // 
+            this.btn_PendingTrips.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_PendingTrips.FlatAppearance.BorderSize = 0;
+            this.btn_PendingTrips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PendingTrips.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_PendingTrips.Location = new System.Drawing.Point(668, 842);
+            this.btn_PendingTrips.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_PendingTrips.Name = "btn_PendingTrips";
+            this.btn_PendingTrips.Size = new System.Drawing.Size(265, 36);
+            this.btn_PendingTrips.TabIndex = 44;
+            this.btn_PendingTrips.Text = "Pending Trip";
+            this.btn_PendingTrips.UseVisualStyleBackColor = false;
+            this.btn_PendingTrips.Click += new System.EventHandler(this.btn_PendingTrips_Click);
+            // 
+            // btn_ActiveTrips
+            // 
+            this.btn_ActiveTrips.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_ActiveTrips.FlatAppearance.BorderSize = 0;
+            this.btn_ActiveTrips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ActiveTrips.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_ActiveTrips.Location = new System.Drawing.Point(1273, 842);
+            this.btn_ActiveTrips.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ActiveTrips.Name = "btn_ActiveTrips";
+            this.btn_ActiveTrips.Size = new System.Drawing.Size(265, 36);
+            this.btn_ActiveTrips.TabIndex = 43;
+            this.btn_ActiveTrips.Text = "Active Trips";
+            this.btn_ActiveTrips.UseVisualStyleBackColor = false;
+            this.btn_ActiveTrips.Click += new System.EventHandler(this.btn_ActiveTrips_Click);
             // 
             // dataGridView1
             // 
@@ -96,51 +141,6 @@
             this.panel1.Size = new System.Drawing.Size(1565, 176);
             this.panel1.TabIndex = 40;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btn_Complete
-            // 
-            this.btn_Complete.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Complete.FlatAppearance.BorderSize = 0;
-            this.btn_Complete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Complete.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Complete.Location = new System.Drawing.Point(23, 842);
-            this.btn_Complete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Complete.Name = "btn_Complete";
-            this.btn_Complete.Size = new System.Drawing.Size(265, 36);
-            this.btn_Complete.TabIndex = 45;
-            this.btn_Complete.Text = "Complete Trip";
-            this.btn_Complete.UseVisualStyleBackColor = false;
-            this.btn_Complete.Click += new System.EventHandler(this.btn_Complete_Click);
-            // 
-            // btn_PendingTrips
-            // 
-            this.btn_PendingTrips.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_PendingTrips.FlatAppearance.BorderSize = 0;
-            this.btn_PendingTrips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PendingTrips.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_PendingTrips.Location = new System.Drawing.Point(668, 842);
-            this.btn_PendingTrips.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_PendingTrips.Name = "btn_PendingTrips";
-            this.btn_PendingTrips.Size = new System.Drawing.Size(265, 36);
-            this.btn_PendingTrips.TabIndex = 44;
-            this.btn_PendingTrips.Text = "Pending Trip";
-            this.btn_PendingTrips.UseVisualStyleBackColor = false;
-            this.btn_PendingTrips.Click += new System.EventHandler(this.btn_PendingTrips_Click);
-            // 
-            // btn_ActiveTrips
-            // 
-            this.btn_ActiveTrips.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_ActiveTrips.FlatAppearance.BorderSize = 0;
-            this.btn_ActiveTrips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ActiveTrips.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_ActiveTrips.Location = new System.Drawing.Point(1273, 842);
-            this.btn_ActiveTrips.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ActiveTrips.Name = "btn_ActiveTrips";
-            this.btn_ActiveTrips.Size = new System.Drawing.Size(265, 36);
-            this.btn_ActiveTrips.TabIndex = 43;
-            this.btn_ActiveTrips.Text = "Active Trips";
-            this.btn_ActiveTrips.UseVisualStyleBackColor = false;
-            this.btn_ActiveTrips.Click += new System.EventHandler(this.btn_ActiveTrips_Click);
             // 
             // pictureBox2
             // 

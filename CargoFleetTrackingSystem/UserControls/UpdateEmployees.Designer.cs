@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.empIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,13 +64,14 @@
             this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cargo_FleetDBDataSet8 = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet8();
             this.usersTableAdapter1 = new CargoFleetTrackingSystem.Cargo_FleetDBDataSet8TableAdapters.UsersTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,18 +83,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1574, 160);
             this.panel1.TabIndex = 41;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
-            this.pictureBox2.Location = new System.Drawing.Point(693, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(214, 109);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // label10
             // 
@@ -296,7 +284,7 @@
             // 
             // Btn_Remove
             // 
-            this.Btn_Remove.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Remove.BackColor = System.Drawing.Color.DarkRed;
             this.Btn_Remove.FlatAppearance.BorderSize = 0;
             this.Btn_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Remove.Font = new System.Drawing.Font("Consolas", 10F);
@@ -385,7 +373,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 10F);
+            this.label7.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(247, 231);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -410,6 +398,18 @@
             // usersTableAdapter1
             // 
             this.usersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CargoFleetTrackingSystem.Properties.Resources.cargo_fleet_logo_round;
+            this.pictureBox2.Location = new System.Drawing.Point(693, 8);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(214, 109);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
             // 
             // UpdateEmployees
             // 
@@ -442,12 +442,12 @@
             this.Name = "UpdateEmployees";
             this.Size = new System.Drawing.Size(1571, 1052);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargo_FleetDBDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
